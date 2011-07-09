@@ -17,6 +17,8 @@ RSpec.configure do |config|
   # config.mock_with :rr
   config.mock_with :rspec
 
+  require File.expand_path("../../test/factories.rb", __FILE__)
+  
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
