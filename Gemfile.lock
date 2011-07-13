@@ -47,6 +47,10 @@ GEM
     factory_girl_rails (1.1.rc1)
       factory_girl (~> 2.0.0.rc)
       railties (>= 3.0.0)
+    guard (0.5.0)
+      thor (~> 0.14.6)
+    guard-rspec (0.4.0)
+      guard (>= 0.4.0)
     hike (1.1.0)
     i18n (0.6.0)
     jquery-rails (1.0.12)
@@ -126,6 +130,8 @@ PLATFORMS
 DEPENDENCIES
   coffee-script
   factory_girl_rails (~> 1.1.rc1)
+  guard
+  guard-rspec
   jquery-rails
   rails (= 3.1.0.rc4)
   rspec-rails (~> 2.4)
