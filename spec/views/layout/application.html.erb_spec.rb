@@ -37,11 +37,24 @@ describe "layouts/application.html.erb" do
       rendered.should have_selector('div', :id => 'container')
     end
     
-    it "should have a header tag" do
-      render
+    describe "header" do
+      it "should have a header tag" do
+        render
       
-      rendered.should have_selector('div', :id => 'container') do | container |
-        container.should have_selector('header')
+        rendered.should have_selector('div', :id => 'container') do | container |
+          container.should have_selector('header')
+        end
+      end
+      
+      it "should render to header from partial" do
+        sub_content = "This content"
+        stub_template "shared/_header.html.erb" => sub_content
+            
+        render
+          
+        rendered.should have_selector('div', :id => 'container') do | container |
+          container.should have_selector('header', :content => sub_content)
+        end
       end
     end
     
@@ -51,11 +64,24 @@ describe "layouts/application.html.erb" do
       rendered.should have_selector('div', :id => 'main', :role => 'main')
     end
     
-    it "should have a footer tag" do
-      render
+    describe "footer" do
+      it "should have a footer tag" do
+        render
       
-      rendered.should have_selector('div', :id => 'container') do | container |
-        container.should have_selector('footer')
+        rendered.should have_selector('div', :id => 'container') do | container |
+          container.should have_selector('footer')
+        end
+      end
+      
+      it "should render to footer from partial" do
+        sub_content = "This content"
+        stub_template "shared/_footer.html.erb" => sub_content
+            
+        render
+          
+        rendered.should have_selector('div', :id => 'container') do | container |
+          container.should have_selector('footer', :content => sub_content)
+        end
       end
     end
   end
