@@ -1,1 +1,1 @@
-guard --notify false
+guard --notify false --clear
