@@ -2,4 +2,6 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  application:
+      title: "Quality keeper -- keep your project in a good shape"
+      description: 'Quality keeper helps you to keep in shape your application by continously checking code quality'
