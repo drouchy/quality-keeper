@@ -11,7 +11,11 @@ en:
 
   projects:
     link_name: 'projects'
-
+    
+    show_link_name: 'Show'
+    edit_link_name: 'Edit'
+    delete_link_name: 'delete'
+    
   stats:
     link_name: 'Stats'
 
@@ -20,3 +24,4 @@ en:
 
   user:
     link_name: 'User info'
+

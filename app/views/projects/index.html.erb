@@ -1,32 +1,20 @@
 <h1>Listing projects</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Logo</th>
-    <th>Git url</th>
-    <th>Git login</th>
-    <th>Git password</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @projects.each do |project| %>
-  <tr>
-    <td><%= project.name %></td>
-    <td><%= project.description %></td>
-    <td><%= project.logo %></td>
-    <td><%= project.git_url %></td>
-    <td><%= project.git_login %></td>
-    <td><%= project.git_password %></td>
-    <td><%= link_to 'Show', project %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+<ul id="projects">
+    <% @projects.each do |project| %>
+        <li class="project">
+            <h2><img src="<%= project.logo %>" alt="<%= project.name %>" width="30" /><%= project.name %></h2>
+            
+            <div class="description"><%= project.description%></div>
+            
+            <div class="controls">
+                <%= link_to t('projects.show_link_name'), project %>
+                <%= link_to t('projects.edit_link_name'), edit_project_path(project) %>
+                <%= link_to t('projects.delete_link_name'), project, confirm: 'Are you sure?', method: :delete %>
+            </div>
+        </li>
+    <% end %>
+</ul>
 
 <br />
 

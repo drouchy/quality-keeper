@@ -1,3 +1,10 @@
-// Place all the styles related to the Projects controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+ul#projects {
+    li {
+      position: relative;
+      padding: 15px 25px 15px 45px !important;
+      border-bottom: 1px solid #CCC;
+      font-size: 16px;
+      background-position: 24px 16px;
+      background-repeat: no-repeat;
+    }
+}
