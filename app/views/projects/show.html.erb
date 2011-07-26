@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @project.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @project.description %>
+</p>
+
+<p>
+  <b>Logo:</b>
+  <%= @project.logo %>
+</p>
+
+<p>
+  <b>Git url:</b>
+  <%= @project.git_url %>
+</p>
+
+<p>
+  <b>Git login:</b>
+  <%= @project.git_login %>
+</p>
+
+<p>
+  <b>Git password:</b>
+  <%= @project.git_password %>
+</p>
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

@@ -10,20 +10,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110706141240) do
+ActiveRecord::Schema.define(:version => 20110726140528) do
 
-  create_table "commits", :force => true do |t|
-    t.string   "sha1"
-    t.string   "author"
-    t.datetime "timestamp"
-    t.string   "comment"
+  create_table "projects", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "logo"
+    t.string   "git_url"
+    t.string   "git_login"
+    t.string   "git_password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "projects", :force => true do |t|
-    t.string   "name"
-    t.string   "vcs_url"
+  create_table "stats", :force => true do |t|
+    t.datetime "timestamp"
+    t.string   "commit"
+    t.float    "flog_top_5_percent"
+    t.float    "flog_average"
+    t.float    "flay"
+    t.integer  "loc"
+    t.integer  "lot"
+    t.float    "roody"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
