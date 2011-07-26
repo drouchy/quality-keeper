@@ -50,6 +50,9 @@ GEM
       thor (~> 0.14.6)
     guard-rspec (0.4.0)
       guard (>= 0.4.0)
+    guard-spork (0.2.1)
+      guard (>= 0.2.2)
+      spork (>= 0.8.4)
     hike (1.2.0)
     i18n (0.6.0)
     jquery-rails (1.0.12)
@@ -111,6 +114,7 @@ GEM
     simplecov (0.4.2)
       simplecov-html (~> 0.4.4)
     simplecov-html (0.4.5)
+    spork (0.8.5)
     sprockets (2.0.0.beta.12)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -139,12 +143,14 @@ DEPENDENCIES
   factory_girl_rails (~> 1.1.rc1)
   guard
   guard-rspec
+  guard-spork
   jquery-rails
   nokogiri
   rails (= 3.1.0.rc5)
   rspec-rails (~> 2.4)
   sass-rails (~> 3.1.0.rc)
   simplecov
+  spork
   sqlite3
   turn
   uglifier
