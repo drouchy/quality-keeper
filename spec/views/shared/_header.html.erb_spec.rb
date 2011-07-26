@@ -25,7 +25,7 @@ describe "shared/_header.html.erb" do
     it "should have a projects menu" do
       render
 
-      should_header_have_navigation_menu(rendered, t('projects.link_name'), '#')
+      should_header_have_navigation_menu(rendered, t('projects.link_name'), projects_path)
     end
     
     it "should have a stats menu" do
