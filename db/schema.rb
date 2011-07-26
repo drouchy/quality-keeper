@@ -23,17 +23,4 @@ ActiveRecord::Schema.define(:version => 20110726140528) do
     t.datetime "updated_at"
   end
 
-  create_table "stats", :force => true do |t|
-    t.datetime "timestamp"
-    t.string   "commit"
-    t.float    "flog_top_5_percent"
-    t.float    "flog_average"
-    t.float    "flay"
-    t.integer  "loc"
-    t.integer  "lot"
-    t.float    "roody"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
 end
