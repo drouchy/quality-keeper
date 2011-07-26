@@ -6,7 +6,7 @@ describe "shared/_header.html.erb" do
     render
   
     rendered.should have_selector('img', :id => 'logo', 
-                                  :src => '/assets/logo.png', :alt => t('application.title'))
+                                  :src => '/assets/small_logo.png', :alt => t('application.title'))
   end
   
   describe 'top bar navigation menu' do

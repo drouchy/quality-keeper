@@ -1,12 +1,15 @@
+@import 'variables.scss';
 
-nav {
-  
-  #top_bar {
+#logo {
   float: left;
+}
+
+nav#top_bar {
   
   ul {
     list-style-type: none;
-    
+    line-height: $header_height;
+  
     li {
       float: left;
 
@@ -20,6 +23,7 @@ nav {
       float: right;
     }
   }
+  
   a {
     color: #ccc;
   }
