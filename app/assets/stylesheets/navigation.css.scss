@@ -1,0 +1,30 @@
+
+nav {
+  
+  #top_bar {
+  float: left;
+  
+  ul {
+    list-style-type: none;
+    
+    li {
+      float: left;
+
+      a {
+        display: block;
+        padding: 0 15px;
+      }
+    }
+    
+    li:last-child {
+      float: right;
+    }
+  }
+  a {
+    color: #ccc;
+  }
+
+  .current {
+    background-color: black;
+  }
+}

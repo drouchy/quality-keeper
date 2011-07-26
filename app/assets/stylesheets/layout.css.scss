@@ -39,27 +39,27 @@ caption {
 }
 
 #container{	
-	header {
-		display: block;
-		background: url(/assets/layout/bg-top.png) repeat-x;
-		height: $header_height;
-		width: 100%;
-		position: absolute;
-		z-index: 11;
-		font-size: 13px;
-		line-height: $header_height;
-		color: #CCC;
-	}
-	
-	#main {
-		padding-top: $header_height;
-		min-height: 400px;
-		margin: 0 auto $footer_height;
-	}
-	
-	footer {
-		height: $footer_height;
-		line-height: $footer_height;
-		background-color: #E9E9E9;
-	}
+  header {
+    display: block;
+    background: url(/assets/layout/bg-top.png) repeat-x;
+    height: $header_height;
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+    font-size: 13px;
+    line-height: $header_height;
+    color: #CCC;
+  }
+
+  #main {
+    padding-top: $header_height;
+    min-height: 400px;
+    margin: 0 auto $footer_height;
+  }
+
+  footer {
+    height: $footer_height;
+    line-height: $footer_height;
+    background-color: #E9E9E9;
+  }
 }

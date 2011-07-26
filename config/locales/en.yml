@@ -3,5 +3,20 @@
 
 en:
   application:
-      title: "Quality keeper -- keep your project in a good shape"
-      description: 'Quality keeper helps you to keep in shape your application by continously checking code quality'
+    title: "Quality keeper -- keep your project in a good shape"
+    description: 'Quality keeper helps you to keep in shape your application by continously checking code quality'
+
+  home:
+    link_name: 'Home'
+
+  projects:
+    link_name: 'projects'
+
+  stats:
+    link_name: 'Stats'
+
+  about:
+    link_name: 'About'
+
+  user:
+    link_name: 'User info'
