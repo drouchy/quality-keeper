@@ -45,5 +45,15 @@ describe "shared/_header.html.erb" do
 
       should_header_have_navigation_menu(rendered, t('user.link_name'), '#')
     end
+    
+    it 'should classify the current controller menu link as current' do
+      assign(:controller, HomeController.new)
+      
+      render
+      
+      rendered.should have_selector('li', :class => 'current') do | menu |
+        menu.should have_selector('a', :content => 'Home')
+      end
+    end
   end
 end

@@ -2,10 +2,10 @@
 
 <nav id="top_bar">
     <ul>
-        <li><a href="/"><%= t('home.link_name') %></a></li>
-        <li><a href="<%= projects_path %>"><%= t('projects.link_name') %></a></li>
-        <li><a href="#"><%= t('stats.link_name') %></a></li>
-        <li><a href="#"><%= t('about.link_name') %></a></li>
-        <li><a href="#"><%= t('user.link_name') %></a></li>
+        <li <%= raw generate_current_class('home') %>><a href="/"><%= t('home.link_name') %></a></li>
+        <li <%= raw generate_current_class('projects') %>><a href="<%= projects_path %>"><%= t('projects.link_name') %></a></li>
+        <li <%= raw generate_current_class('stats') %>><a href="#"><%= t('stats.link_name') %></a></li>
+        <li <%= raw generate_current_class('about') %>><a href="#"><%= t('about.link_name') %></a></li>
+        <li <%= raw generate_current_class('user') %>><a href="#"><%= t('user.link_name') %></a></li>
     </ul>
 </nav>
