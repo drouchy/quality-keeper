@@ -42,7 +42,7 @@ describe "projects/index.html.erb" do
       render
       
       @projects.each do | project |
-        rendered.should have_selector('a', :href => link_to(project), :text => t('projects.show_link_name'))
+        rendered.should have_selector('a', :href => project_path(project), :content => t('projects.show_link_name'))
       end
     end
     
@@ -50,7 +50,7 @@ describe "projects/index.html.erb" do
       render
       
       @projects.each do | project |
-        rendered.should have_selector('a', :href => edit_project_path(project), :text => t('projects.edit_link_name'))
+        rendered.should have_selector('a', :href => edit_project_path(project), :content => t('projects.edit_link_name'))
       end
     end
     
@@ -58,7 +58,7 @@ describe "projects/index.html.erb" do
       render
       
       @projects.each do | project |
-        rendered.should have_selector('a', :href => link_to(project, method => :delete), :text => t('projects.delete_link_name'))
+        rendered.should have_selector('a', :href => project_path(project), :content => t('projects.delete_link_name'))
       end
     end
   end

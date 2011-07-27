@@ -6,11 +6,10 @@
             <h2><img src="<%= project.logo %>" alt="<%= project.name %>" width="30" /><%= project.name %></h2>
             
             <div class="description"><%= project.description%></div>
-            
             <div class="controls">
-                <%= link_to t('projects.show_link_name'), project %>
+                <%= link_to t('projects.show_link_name'), project_path(project) %>
                 <%= link_to t('projects.edit_link_name'), edit_project_path(project) %>
-                <%= link_to t('projects.delete_link_name'), project, confirm: 'Are you sure?', method: :delete %>
+                <%= link_to t('projects.delete_link_name'), project_path(project), confirm: 'Are you sure?', method: :delete %>
             </div>
         </li>
     <% end %>
