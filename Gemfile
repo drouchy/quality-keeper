@@ -37,7 +37,7 @@ group :development do
 end
 
 group :test, :development do
-  gem "webrat"
+  gem "capybara"
   gem "rspec-rails", "~> 2.4"
   gem "factory_girl_rails", "~> 1.1.rc1"
   gem 'nokogiri'
