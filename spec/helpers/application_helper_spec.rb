@@ -13,7 +13,7 @@ describe ApplicationHelper do
     end
     
     it 'should return class="current" when the current controller is the one tested' do
-      helper.generate_current_class('home').should eq('class="current"')
+      helper.generate_current_class(controller.controller_name).should eq('class="current"')
     end
   end
 end
