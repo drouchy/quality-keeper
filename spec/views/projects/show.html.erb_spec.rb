@@ -2,29 +2,41 @@ require 'spec_helper'
 
 describe "projects/show.html.erb" do
   before(:each) do
-    @project = assign(:project, stub_model(Project,
-      :name => "Name",
-      :description => "Description",
-      :logo => "Logo",
-      :git_url => "Git Url",
-      :git_login => "Git Login",
-      :git_password => "Git Password"
-    ))
+    @project = FactoryGirl.build(:project, :id => 1, :git_url => 'url to git')
+    
+    assign(:project, @project)
   end
 
-  it "renders attributes in <p>" do
-    render
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    rendered.should match(/Name/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    rendered.should match(/Description/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    rendered.should match(/Logo/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    rendered.should match(/Git Url/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    rendered.should match(/Git Login/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    rendered.should match(/Git Password/)
+ describe "render the project information" do
+
+    it 'renders the project information div' do
+      render
+
+      rendered.should have_selector('div', :class => 'project_information' )
+    end
+
+    it 'renders the project name' do
+      render
+
+      rendered.should have_selector('div h1', :content => @project.name)
+    end
+
+    it 'renders the project logo' do
+      render
+
+      rendered.should match(/"#{@project.logo}"/)
+    end
+
+    it 'renders the project description' do
+      render
+
+      rendered.should have_selector('div h1', :content => @project.description)
+    end
+
+    it 'renders the project git url' do
+      render
+
+      rendered.should match(/url to git/)
+    end
   end
 end

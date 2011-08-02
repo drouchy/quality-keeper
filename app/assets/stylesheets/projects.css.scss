@@ -1,3 +1,5 @@
+@import 'mixins.scss';
+
 ul#projects {
     li {
       position: relative;
@@ -7,4 +9,34 @@ ul#projects {
       background-position: 24px 16px;
       background-repeat: no-repeat;
     }
+}
+
+$info_border:solid gray 1px;
+
+
+#project_information {
+  width: 80%;
+  background-color: #FAFAFA;
+  border: $info_border;
+
+  @include centered;
+
+  padding: 10px;
+
+  @include rounded_corners(5px);
+  
+  header {
+    img {
+      float: left;
+    }
+
+    height:40px; 
+    line-height:40px;
+    border-bottom: $info_border;
+    padding-left: 5px;
+  }
+
+  h1 {
+    margin-left: 40px;
+  }
 }

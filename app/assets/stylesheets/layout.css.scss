@@ -38,7 +38,7 @@ caption {
 }
 
 #container{	
-  header {
+  header#top {
     display: block;
     background: url(/assets/layout/bg-top.png) repeat-x;
     height: $header_height;

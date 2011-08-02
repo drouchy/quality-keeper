@@ -1,35 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @project.name %>
-</p>
+<div id="project_information">
+  <header>
+    <%= image_tag @project.logo, :width => 30, :alt => @project.name%><h1><%= @project.name %></h1>
+  </header>
+  <p class="description"><%= @project.description %></p>
+  <p class="url"><%= @project.git_url %></p>
+</div>
 
-<p>
-  <b>Description:</b>
-  <%= @project.description %>
-</p>
-
-<p>
-  <b>Logo:</b>
-  <%= @project.logo %>
-</p>
-
-<p>
-  <b>Git url:</b>
-  <%= @project.git_url %>
-</p>
-
-<p>
-  <b>Git login:</b>
-  <%= @project.git_login %>
-</p>
-
-<p>
-  <b>Git password:</b>
-  <%= @project.git_password %>
-</p>
-
+<div id="commit">
+    
+</div>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
