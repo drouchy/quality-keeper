@@ -34,6 +34,7 @@ group :development do
   gem 'guard-rspec'
   gem 'spork'
   gem 'guard-spork'
+  gem 'active_reload'
 end
 
 group :test, :development do
