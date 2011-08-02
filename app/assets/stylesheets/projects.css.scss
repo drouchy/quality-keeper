@@ -13,16 +13,21 @@ ul#projects {
 
 $info_border:solid gray 1px;
 
+$div_width: 80%;
+
+@mixin div() {
+  @include centered;
+  width: $div_width;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
 #project_information {
-  width: 80%;
+  
   background-color: #FAFAFA;
   border: $info_border;
 
-  @include centered;
-
-  padding: 10px;
-
+  @include div();
   @include rounded_corners(5px);
   
   header {
@@ -39,4 +44,13 @@ $info_border:solid gray 1px;
   h1 {
     margin-left: 40px;
   }
+
+}
+
+div#commit {
+  @include div();
+  min-height: 40px;
+  background-color: #EAF2F5;
+
+  border: 1px solid #BEDCE7;
 }
