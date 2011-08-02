@@ -3,7 +3,7 @@
 <ul id="projects">
     <% @projects.each do |project| %>
         <li class="project">
-            <h2><img src="<%= project.logo %>" alt="<%= project.name %>" width="30" /><%= project.name %></h2>
+            <h2><%= image_tag project.logo, :alt => project.name,  :width => 30 %><%= project.name %></h2>
             
             <div class="description"><%= project.description%></div>
             <div class="controls">
