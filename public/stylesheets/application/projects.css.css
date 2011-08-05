@@ -1,0 +1,50 @@
+/* line 4, ../../../app/assets/stylesheets/application/projects.css.scss */
+ul#projects li {
+  position: relative;
+  padding: 15px 25px 15px 45px !important;
+  border-bottom: 1px solid #CCC;
+  font-size: 16px;
+  background-position: 24px 16px;
+  background-repeat: no-repeat;
+}
+
+/* line 25, ../../../app/assets/stylesheets/application/projects.css.scss */
+#project_information {
+  background-color: #FAFAFA;
+  border: solid gray 1px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 33, ../../../app/assets/stylesheets/application/projects.css.scss */
+#project_information header {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: solid gray 1px;
+  padding-left: 5px;
+}
+/* line 34, ../../../app/assets/stylesheets/application/projects.css.scss */
+#project_information header img {
+  float: left;
+}
+/* line 44, ../../../app/assets/stylesheets/application/projects.css.scss */
+#project_information h1 {
+  margin-left: 40px;
+}
+
+/* line 50, ../../../app/assets/stylesheets/application/projects.css.scss */
+div#commit {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  min-height: 40px;
+  background-color: #EAF2F5;
+  border: 1px solid #BEDCE7;
+}

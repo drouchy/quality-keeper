@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
+Compass.configuration.relative_assets = true
+
 module QualityKeeper
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -38,7 +40,7 @@ module QualityKeeper
 
     # Enable the asset pipeline
     config.assets.enabled = true
-    
+   
     config.generators do |g|
       g.test_framework :rspec
       g.fixture_replacement :factory_girl

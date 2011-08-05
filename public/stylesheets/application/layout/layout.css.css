@@ -1,0 +1,67 @@
+/* line 3, ../../../../app/assets/stylesheets/application/layout/layout.css.scss */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../../../../app/assets/stylesheets/application/layout/layout.css.scss */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, ../../../../app/assets/stylesheets/application/layout/layout.css.scss */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 20, ../../../../app/assets/stylesheets/application/layout/layout.css.scss */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 26, ../../../../app/assets/stylesheets/application/layout/layout.css.scss */
+td, th {
+  text-align: left;
+  font-size: 80%;
+  padding: 5px 10px;
+  vertical-align: top;
+}
+
+/* line 33, ../../../../app/assets/stylesheets/application/layout/layout.css.scss */
+caption {
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+}
+
+/* line 41, ../../../../app/assets/stylesheets/application/layout/layout.css.scss */
+#container header#top {
+  display: block;
+  background: url(/assets/layout/bg-top.png) repeat-x;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  z-index: 11;
+  font-size: 13px;
+  line-height: 40px;
+  color: #CCC;
+}
+/* line 53, ../../../../app/assets/stylesheets/application/layout/layout.css.scss */
+#container #main {
+  padding-top: 40px;
+  min-height: 400px;
+  margin: 0 auto 40px;
+}
+/* line 59, ../../../../app/assets/stylesheets/application/layout/layout.css.scss */
+#container footer {
+  height: 40px;
+  line-height: 40px;
+  background-color: #E9E9E9;
+}

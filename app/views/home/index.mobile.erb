@@ -1,1 +1,17 @@
 <h1>Home</h1>
+<% images = ['bar-chart','addressbook','configuration','processing','star'] %>
+<% colors = ['green','white'] %>
+
+<% images.length.times.with_index do |index| %>
+<div style="clear:both; margin-bottom:5px;">
+<% images.each_with_index do |image, index2| %>
+<% color = colors[1] if index != index2 %>
+<% color = colors[0] if index == index2 %>
+
+<% additional = "" %>
+<% additional = "selected" if index == index2 %>
+<div class="<%= color %>-<%=image %> sprite status_bar <%= additional %>">&nbsp;</div>
+<% end %>
+<div style="height: 10px;clear:both;" />
+</div>
+<% end %>

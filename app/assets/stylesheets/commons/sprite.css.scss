@@ -1,0 +1,22 @@
+@import "green/*.png";
+@import "white/*.png";
+
+@include all-green-sprites;
+@include all-white-sprites;
+
+.sprite {
+  width: 32px;
+  height: 32px;
+}
+
+.status_bar {
+  float:left; 
+  background-color:black;
+}
+
+.selected {
+  border: solid green 1px;
+  height: 36px;
+  background-repeat: no-repeat;
+  margin-top: -6px;
+}
